@@ -20,6 +20,8 @@ public class Role implements Serializable {
 
     private String roleName;
 
+    private String roleCode;
+
     private String description;
 
     public Integer getRoleId() {
@@ -46,11 +48,20 @@ public class Role implements Serializable {
         this.description = description;
     }
 
+    public String getRoleCode() {
+        return roleCode;
+    }
+
+    public void setRoleCode(String roleCode) {
+        this.roleCode = roleCode;
+    }
+
     @Override
     public String toString() {
         return "Role{" +
                 "roleId=" + roleId +
                 ", roleName='" + roleName + '\'' +
+                ", roleCode='" + roleCode + '\'' +
                 ", description='" + description + '\'' +
                 '}';
     }
